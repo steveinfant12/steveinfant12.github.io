@@ -1,0 +1,131 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-image: url(./IMG/main.jpg);
+  background-position: 0px 105px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+  position: relative;
+}
+
+header {
+  background: linear-gradient(to right, greenyellow, rgba(0, 0, 255, 1));
+  padding: 5px;
+  position: relative;
+}
+
+.h1 {
+  position: absolute;
+  top: 10%;
+  left: 38%;
+}
+
+nav > ul > li {
+  float: left;
+  margin-left: 40px;
+  list-style-type: none;
+  border-left: 1px solid black;
+  padding: 3px 40px 0;
+}
+/* For removing first border in nav */
+nav > ul > li:nth-child(1) {
+  border-left: none;
+}
+ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main nav {
+  width: 100%;
+  min-height: 25px;
+  background: linear-gradient(to right, #e0e02abe, rgb(255, 141, 75));
+}
+
+.main > img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.main > img:nth-child(3) {
+  left: 33%;
+  top: 28%;
+}
+.main > img:nth-child(4) {
+  left: 38%;
+  top: 38%;
+}
+.main > img:nth-child(5) {
+  left: 43%;
+  top: 48%;
+}
+.main > img:nth-child(6) {
+  left: 48%;
+  top: 58%;
+}
+.main > img:nth-child(7) {
+  width: 120px;
+  height: 120px;
+  left: 3%;
+  top: 28%;
+}
+.main > img:nth-child(8) {
+  width: 120px;
+  height: 120px;
+  left: 3%;
+  top: 58%;
+}
+.main > img:nth-child(9) {
+  width: 120px;
+  height: 120px;
+  left: 12%;
+  top: 43%;
+}
+.main > img:nth-child(10) {
+  width: 250px;
+  height: 300px;
+  left: 80%;
+  top: 28%;
+}
+
+section {
+  padding: 15px;
+  background-color: rgb(252, 90, 252);
+}
+section > div {
+  background-color: #fad3da;
+  border-radius: 7px;
+  padding: 8px;
+  text-align: justify;
+}
+section div img {
+  float: right;
+  margin: 5px 5px 5px 15px;
+  max-height: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, greenyellow, rgba(0, 0, 255, 0));
+  min-height: 100px;
+}
+
+/* Fonts */
+footer h2,
+header h1 {
+  font-family: "Reggae One", cursive;
+}
+
+footer h2 span {
+  color: rgb(245, 17, 17);
+  font-size: 30px;
+}

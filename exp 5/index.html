@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIMPLE CALCULATOR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            #ab{
+                width: 600px;
+                height: 250px;
+                background-color: lightblue;
+                position: relative;
+                left: 28%;
+                padding: 30px;
+                text-align: center;
+                font-size: 30px;
+                
+            }
+            
+            #in1{
+                position: absolute;
+                top: 100px;
+                left: 40px;
+                width: 250px;
+                height: 30px;
+                ;
+                border-color: royalblue;
+                
+            }
+            
+            #in2{
+                position: absolute;
+                top: 100px;
+                right: 40px;
+                width: 250px;
+                height: 30px;
+                
+                border-color: royalblue;
+            }
+            
+            #ad{
+                position: absolute;
+                top: 160px;
+                left: 40px;
+                width: 125px;
+                height: 30px;
+                border-color: buttonshadow;
+                
+            }
+            #su{
+                position: absolute;
+                top: 160px;
+                left: 180px;
+                width: 125px;
+                height: 30px;
+                border-color: buttonshadow;
+            }
+            #ml {
+                position: absolute;
+                top: 160px;
+                left: 320px;
+                width: 125px;
+                height: 30px;
+                border-color: buttonshadow;
+            }
+            #di{
+                position: absolute;
+                top: 160px;
+                left: 460px;
+                width: 125px;
+                height: 30px;
+                border-color: buttonshadow;
+            }
+            #res{
+                position: absolute;
+                top: 225px;
+                left: 40px;
+                width: 350px;
+                height: 25px;
+                
+                text-align: left;
+                border-color: buttonshadow;           
+                
+            }
+                       
+                
+            
+            
+            #cl{
+                position: absolute;
+                top: 225px;
+                right: 75px;
+                width: 125px;
+                height: 30px;
+                border-color: buttonshadow;
+            }
+           
+        </style>
+            
+    </head>
+    <body>
+        
+        <table width="100%">                
+            <td><a href="index.html" target="_blank">Calculator</a></td>
+                <td>|</td>
+                <td><a href="bmi.html" target="_blank">BMI</a></td>
+                <td>|</td>
+                <td><a href="currency.html" target="_blank">currency converter</a></td>
+                <td>|</td>
+                        
+            </tr>
+                      
+        </table>
+        
+    <center> <h1> SIMPLE CALCULATOR USING JAVA SCRIPT </h1> </center>
+        <div id="ab"> 
+            SIMPLE CALCULATOR
+            <input type="text" id="in1" placeholder="num eg:123" />
+            <input type="text" id="in2" placeholder="num eg:123"/>
+            <button id="ad" onclick="ad1()">+ ADD</button>
+            <button id="su" onclick="sub()">- SUB</button>
+            <button id="ml" onclick="mul()">* MUL</button>
+            <button id="di" onclick="div()">/ DIV</button>
+            <input type="text" id="res" placeholder="num eg:123"/>
+            
+            <button id="cl" onclick="clr()">CLEAR</button>
+            
+        </div>
+            <script>
+                function ad1()
+                {
+                    
+                    
+                     a=parseInt(document.getElementById("in1").value);
+                     b=parseInt(document.getElementById("in2").value);
+                    c=a+b;
+                    document.getElementById("res").value=c;
+                    
+                    
+                    
+                     
+                }
+                 function sub()
+                {
+                    
+                    
+                     a=parseInt(document.getElementById("in1").value);
+                     b=parseInt(document.getElementById("in2").value);
+                    c=a-b;
+                    document.getElementById("res").value=c;
+                     
+                }
+                 function mul()
+                {
+                    
+                    
+                     a=parseInt(document.getElementById("in1").value);
+                     b=parseInt(document.getElementById("in2").value);
+                    c=a*b;
+                    document.getElementById("res").value=c;
+                     
+                }
+                 function div()
+                {
+                    
+                    
+                     a=parseInt(document.getElementById("in1").value);
+                     b=parseInt(document.getElementById("in2").value);
+                    c=a/b;
+                    document.getElementById("res").value=c;
+                     
+                }
+                 function clr()
+                {               
+                    x=("Do you want to clear the values ")
+                    if(x){
+                    document.getElementById("in1").value="";
+                    document.getElementById("in2").value="";
+                    document.getElementById("res").value="";
+                        }
+                }
+            </script>
+    </body>
+</html>
